@@ -1,12 +1,27 @@
-# CourseCareers IT Help Desk Portfolio
+# OS Ticket Install & Prerequisites
 
-Hi, I'm Valdez — this repo documents hands-on lab work from my CourseCareers IT Help Desk course, including help desk ticketing software setup and real ticket triage/escalation practice.
+## Summary
+A walkthrough of installing osTicket, an open-source help desk ticketing system, including environment setup and prerequisites.
 
-## Projects
+## Environment & Technologies Used
+- Operating System: (fill in — e.g. Windows Server / Ubuntu)
+- Web server / database stack: (e.g. Apache, MySQL, PHP)
+- Hosting: Azure VM
 
-- [OS Ticket Install & Prerequisites](./01-os-ticket-install/README.md) — setting up an open-source help desk ticketing system from scratch.
-- [Ticket Triage & Escalation Workflow](./02-ticket-triage-workflow/README.md) — walking through how I categorize, prioritize, and escalate real-world support tickets.
+## Prerequisites
+- (list what had to be installed/configured before osTicket itself — PHP version, extensions, database, etc.)
 
-## Connect with me
+## Walkthrough
 
-- LinkedIn: [linkedin.com/in/valdez-brown-10442176](https://linkedin.com/in/valdez-brown-10442176)
+### Step 1: [description]
+![screenshot](./images/step1.png)
+
+Explanation of what's happening in this step.
+
+### Step 2: [description]
+![screenshot](./images/step2.png)
+
+Explanation of what's happening in this step.
+
+## Conclusion
+Summary of what was accomplished and what you learned.
