@@ -2,7 +2,7 @@ OS Ticket Install & Prerequisites
 Summary
 A walkthrough of deploying osTicket, an open-source help desk ticketing system, on a Windows Server environment hosted in Microsoft Azure — covering VM provisioning, IIS/PHP configuration, MySQL database setup, and the osTicket installer itself.
 Environment & Technologies Used
-Operating System: Windows 10 (Azure VM, `Standard\_D2as` size)
+Operating System: Windows 10 (Azure VM, `Standard\\\_D2as` size)
 Hosting: Microsoft Azure — Resource Group `rg-osticket-manual`, VM `osticket-manual-vm`, region East US 2
 Web server: IIS 10 with the CGI role feature enabled (FastCGI)
 Scripting language: PHP 7.3.8 (Non-Thread-Safe build, registered with IIS via PHP Manager)
@@ -15,7 +15,7 @@ PHP 7.3.8 (NTS) downloaded, extracted, and registered as a FastCGI handler in II
 Required/recommended PHP extensions enabled: MySQLi, Gdlib, IMAP, XML, XML-DOM, JSON, Mbstring, Phar, Intl, and Zend OPcache
 MySQL Server installed and running as a Windows service
 An empty `osticket` database created in MySQL for the application to connect to
-osTicket application files downloaded and extracted to `C:\\inetpub\\wwwroot\\osTicket`
+osTicket application files downloaded and extracted to `C:\\\\inetpub\\\\wwwroot\\\\osTicket`
 Walkthrough
 Step 1: Provision the Azure VM
 ![Azure Portal virtual machines navigation](./images/step01-azure-portal-vm-nav.png)
@@ -55,7 +55,7 @@ Step 12: Create the osTicket database
 Used HeidiSQL as a GUI client to create the empty `osticket` database that the installer will connect to.
 Step 13: Deploy the osTicket application files
 ![osTicket files copied to inetpub wwwroot](./images/step13-osticket-files-copied.png)
-Copied the osTicket application files to `C:\\inetpub\\wwwroot\\osTicket`, the site's IIS web root, and renamed `ost-sampleconfig.php` to `ost-config.php` ahead of running the web installer.
+Copied the osTicket application files to `C:\\\\inetpub\\\\wwwroot\\\\osTicket`, the site's IIS web root, and renamed `ost-sampleconfig.php` to `ost-config.php` ahead of running the web installer.
 Step 14: Run the osTicket installer — prerequisite check
 ![osTicket installer prerequisites check, all green](./images/step14-installer-prerequisites-check.png)
 Launched the web-based installer at `/setup/install.php`. It confirmed PHP 7.3.8 and the MySQLi extension met the required minimums, and that all recommended extensions (Gdlib, IMAP, XML, XML-DOM, JSON, Mbstring, Phar, Intl, Zend OPcache) were enabled — proof the environment was configured correctly before installing.
@@ -66,4 +66,4 @@ Step 16: Verify the live system
 ![osTicket Agent Panel login screen, live and branded](./images/step16-osticket-login-live.png)
 Confirmed the finished system is live by loading the Agent Panel login screen, custom-branded for this lab.
 Conclusion
-This project stood up a full osTicket help desk environment from scratch on Windows/IIS — provisioning the Azure VM, enabling and verifying IIS with the CGI feature, registering PHP and confirming its extensions, standing up and connecting to MySQL, and running the osTicket installer to a clean, verified finish. This environment is what Ticket Triage & Escalation Workflow builds on for hands-on help desk practice.
+This project stood up a full osTicket help desk environment from scratch on Windows/IIS — provisioning the Azure VM, enabling and verifying IIS with the CGI feature, registering PHP and confirming its extensions, standing up and connecting to MySQL, and running the osTicket installer to a clean, verified finish. This environment is what Ticket Triage & Escalation Workflow builds on for hands-on help d
